@@ -1,0 +1,55 @@
+@media (max-width: 1200px){
+    body{
+        background-color: black;
+        z-index: 1;
+    }
+    body::before{
+        content: "";
+        /* background: url(https://i.pinimg.com/736x/b4/58/d2/b458d286c4c1d70b94897743eaf15c20.jpg) center center no-repeat; */
+       background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+    body::after{
+       content: "";
+       width: 100%;
+       height: 100%;
+      background-color: black;
+       position: fixed;
+       z-index: 0;
+    }
+    .cabecalho{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fundo-video{
+        display: none;
+    }
+    .video-remove{
+        display: none;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container .mario{
+        max-width: 50%;
+    }
+    .container .informacoes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container .descricao{
+        color:  #fff;
+        text-align: center;
+    }
+    button{
+        background-color: rgb(9, 9, 114);
+    }
+    iframe{
+        width: 90%;
+    }
+}
